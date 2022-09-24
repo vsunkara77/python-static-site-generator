@@ -1,4 +1,4 @@
-import Path from pathlib
+from pathlib import Path
 class Site:
     def __init__(self,source,dest):
         self.source = Path(source)
@@ -13,4 +13,3 @@ class Site:
         for path in self.source.rglob("*"):
             if Path.is_dir(path):
                 create_dir(path)
-                
