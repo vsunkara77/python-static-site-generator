@@ -9,7 +9,7 @@ class Site:
         Path.mkdir(directory,parents = True,exists_ok = True)
 
     def build():
-        path.mkdir(self.dest,parents = True,exists_ok = True)
+        Path.mkdir(self.dest,parents = True,exists_ok = True)
         for path in self.source.rglob("*"):
             if Path.is_dir(path):
                 create_dir(path)
