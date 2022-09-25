@@ -17,5 +17,5 @@ class Content(Mapping):
         self.data["content"] = content
 
     @property
-    def body(self)
+    def body(self):
         return self.data["content"]
