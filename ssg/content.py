@@ -1,9 +1,8 @@
 import re
 from yaml import load
 from yaml import FullLoader
-from collections.abc import mapping
+from collections.abc import Mapping
 
 class Content(mapping):
     __delimeter = "^(?:-|\+){3}\s*$"
     __regex = re.compile(__delimeter,re.MULTILINE)
-    
