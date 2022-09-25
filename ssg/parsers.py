@@ -5,5 +5,4 @@ class Parser:
     extensions: List[str] = []
 
     def valid_extension(self,extension):
-        if extension in self.extensions:
-            pass
+        return extension in self.extensions
