@@ -32,8 +32,12 @@ class Content(Mapping):
         if key in self.metadata:
             return self.data[key]
 
-    def __iter__(self)
+    def __iter__(self):
         self.data.__iter__()
 
-    def __len__(self)
+    def __len__(self):
         self.data.__len__()
+
+    def __repr__(self):
+        data = {}
+        
