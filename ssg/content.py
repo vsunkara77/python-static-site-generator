@@ -29,5 +29,5 @@ class Content(Mapping):
         self.data["type"] = type
 
     def __getitem__(self,key):
-        return self.data[key] if key in self.metadata
-        
+        if key in self.metadata:
+            return self.data[key] 
